@@ -1,0 +1,26 @@
+{
+  "name": "@jackson-bailey/node-layout-example",
+  "version": "0.1.0",
+  "description": "A sample of what the layout of a Node project with typescript should look like",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm install && tsc --project ./test/tsconfig.json",
+    "test": "mocha --recursive ./dist-test/",
+    "prepublish": "tsc"
+  },
+  "author": "Jackson Bailey",
+  "license": "MIT",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JacksonBailey/node-layout-example.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.1.0"
+  }
+}
